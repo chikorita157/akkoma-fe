@@ -3,3 +3,6 @@
    to apply custom styles to your frontend
 */
 @import url("https://use.typekit.net/cjy0pnw.css");
+body {
+font-family: myriad-pro, sans-serif !important;
+}
