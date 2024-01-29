@@ -13,8 +13,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
-  font-family: var(--interfaceFont, sans-serif);
+  font-family: myriad-pro, sans-serif !important;
   margin: 0;
   color: $fallback--text;
   color: var(--text, $fallback--text);
