@@ -2,3 +2,7 @@
    place a css file at $static_dir/static/custom.css
    to apply custom styles to your frontend
 */
+@import url("https://use.typekit.net/cjy0pnw.css");
+body {
+  font-family: myriad-pro, sans-serif !important;
+}

@@ -1,6 +1,6 @@
 {
   "alwaysShowSubjectInput": true,
-  "background": "/static/wdwskyboxbanner.png",
+  "background": "/static/background.jpg",
   "collapseMessageWithSubject": false,
   "greentext": false,
   "hideFilteredStatuses": false,
