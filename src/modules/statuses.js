@@ -349,6 +349,7 @@ const addNewNotifications = (state, { dispatch, notifications, older, visibleNot
     // Only add a new notification if we don't have one for the same action
     if (!state.notifications.idStore.hasOwnProperty(notification.id)) {
       updateNotificationsMinMaxId(state, notification)
+      notification.seen = false
 
       state.notifications.data.push(notification)
       state.notifications.idStore[notification.id] = notification
@@ -704,11 +705,11 @@ const statuses = {
     },
     markSingleNotificationAsSeen ({ rootState, commit }, { id }) {
       commit('markSingleNotificationAsSeen', { id })
-      apiService.markNotificationsAsSeen({
+      /*apiService.markNotificationsAsSeen({
         single: true,
         id,
         credentials: rootState.users.currentUser.credentials
-      })
+      })*/
     },
     dismissNotificationLocal ({ rootState, commit }, { id }) {
       commit('dismissNotification', { id })
